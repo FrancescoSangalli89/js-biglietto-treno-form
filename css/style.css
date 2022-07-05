@@ -94,7 +94,7 @@ h2 {
     display: none;
 }
 
-.ticket-container.show {
+.show {
     display: block;
 }
 
