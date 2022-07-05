@@ -13,3 +13,8 @@ console.log(costoTotaleXKm);
 
 const generaDom = document.getElementById('genera');
 
+generaDom.addEventListener('click', 
+    function() {
+        console.log(costoTotaleXKm)
+    }
+)
