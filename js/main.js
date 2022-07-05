@@ -15,22 +15,22 @@ generaDom.addEventListener('click',
 
         let nomePasseggeroDom = document.getElementById('nome').value;
 
-        document.getElementById('nomePasseggero').innerHTML = '<h3>' + nomePasseggeroDom + '</h3>';
+        document.querySelector('.nomePasseggero').innerHTML = '<h3>' + nomePasseggeroDom + '</h3>';
 
         if (fasciaPrezzo == 1) {
-            document.getElementById('offer').innerHTML = '<div>Biglietto standard</div>';
-            document.getElementById('ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm) * 100) / 100 + '€</div>';
+            document.querySelector('.offer').innerHTML = '<div>Biglietto standard</div>';
+            document.querySelector('.ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm) * 100) / 100 + '€</div>';
         } else if (fasciaPrezzo == 2) {
-            document.getElementById('offer').innerHTML = '<div>Sconto 20%</div>';
-            document.getElementById('ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm - costoTotaleXKm * 20 / 100) * 100) / 100 + '€</div>';
+            document.querySelector('.offer').innerHTML = '<div>Sconto 20%</div>';
+            document.querySelector('.ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm - costoTotaleXKm * 20 / 100) * 100) / 100 + '€</div>';
         } else if (fasciaPrezzo == 3) {
-            document.getElementById('offer').innerHTML = '<div>Sconto 40%</div>';
-            document.getElementById('ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm - costoTotaleXKm * 40 / 100) * 100) / 100 + '€</div>';
+            document.querySelector('.offer').innerHTML = '<div>Sconto 40%</div>';
+            document.querySelector('.ticketPrice').innerHTML = '<div>' + Math.round((costoTotaleXKm - costoTotaleXKm * 40 / 100) * 100) / 100 + '€</div>';
         }
 
-        document.getElementById('carrozza').innerHTML = '<div>' + (Math.floor(Math.random() * 21) + 1) + '</div>';
+        document.querySelector('.carrozza').innerHTML = '<div>' + (Math.floor(Math.random() * 21) + 1) + '</div>';
 
-        document.getElementById('codeCp').innerHTML = '<div>' + (Math.floor(Math.random() * 9999) + 90000) + '</div>';
+        document.querySelector('.codeCp').innerHTML = '<div>' + (Math.floor(Math.random() * 10000) + 90000) + '</div>';
         
 
         document.querySelector('.ticket-container').classList.add('show');
