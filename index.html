@@ -8,21 +8,77 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+
+        <div class="container">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="form-container">
+                <div class="form-container-top">
+                    <div>
+                        <div class="label-container">
+                            <label for="nome">Nome Cognome</label>
+                        </div>
+                        <input type="text" placeholder="Inserisci il tuo nome" id="nome" />
+                    </div>
+                    
+                    <div>
+                        <div class="label-container">
+                            <label for="km">Km da percorrere</label>                       
+                        </div>
+                        <input type="number" placeholder="Inserisci i km" id="km" />
+                    </div>
+                    
+                    <div>
+                        <div class="label-container">
+                            <label for="eta">Fascia d'età</label>
+                        </div>
+                        <select id="eta">
+                            <option value="1">Maggiorenne</option>
+                            <option value="2">Minorenne</option>
+                            <option value="3">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                
         
+                <div class="form-container-btm">
+                    <button id="genera">
+                        Genera
+                    </button>
+                    <button id="annulla">
+                        Annulla
+                    </button>
+                </div>
+            </div>
 
-        <input type="number" id="kmDaPercorrere" />
-
-        <br />
-        
-        <select id="eta">
-            <option value="prezzoPieno">Maggiorenne</option>
-            <option value="sconto20">Minorenne</option>
-            <option value="sconto40">Over 65</option>
-        </select>
-
-        <button id="genera">
-            Genera
-        </button>
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="ticket-container">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="ticket">
+                    <div class="ticket-left">
+                        <h3>NOME PASSEGGERO</h3>
+                        <div id="nomePasseggero"></div>
+                    </div>
+                    <div class="ticket-right">
+                        <div>
+                            <h4>Offerta</h4>
+                            <div id="offer"></div>
+                        </div>
+                        <div>
+                            <h4>Carrozza</h4>
+                            <div id="carrozza"></div>
+                        </div>
+                        <div>
+                            <h4>Codice CP</h4>
+                            <div id="codeCp"></div>
+                        </div>
+                        <div>
+                            <h4>Costo biglietto</h4>
+                            <div id="ticketPrice"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="js/main.js"></script>
     </body>

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input, 
+select {
+    border: solid #B9144F;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+input:focus, 
+select:focus {
+    background-color: #B9144F;
+    color: #fff;
+    border-color: #3d3d3d;
+}
+
+input:focus::placeholder {
+    color: #fff;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #B9144F;
+    padding-top: 2rem;
+}
+
+h1, 
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3rem 10rem;
+    margin: 2rem auto;
+    box-shadow: -3px 3px 20px #000;
+}
+
+.form-container-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label-container {
+    text-align: center;
+    color: #B9144F;
+    margin-bottom: 1rem;
+}
+
+.form-container-btm {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.form-container-btm button {
+    margin: 1rem;
+    display: inline-block;
+    padding: 10px;
+    color: #B9144F;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #808080;
+}
+
+.form-container-btm button:hover {
+    color: #fff;
+    background-color: #5b5b5b;
+
+}
+
+.form-container-btm button:focus {
+    border-color: goldenrod;
+}
+
+.ticket-container {
+    background-color: #fff;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    display: none;
+}
+
+.ticket-container.show {
+    display: block;
+}
+
+.ticket {
+    display: flex;
+}
+
+.ticket-left {
+    background-color: #808080;
+    width: 20%;
+    height: 150px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.ticket-right {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: #808080 solid 2px;
+    border-bottom: #808080 solid 2px;
+    text-align: center;
+}
+
+.ticket-right h4, 
+.ticket-left h3 {
+    margin-bottom: 2rem;
+}
+
