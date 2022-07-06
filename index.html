@@ -9,7 +9,8 @@
     </head>
     <body>
 
-        <div class="container">
+        <main class="container">
+            
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             <div class="form-container">
                 <div class="form-container-top">
@@ -24,7 +25,7 @@
                         <div class="label-container">
                             <label for="km">Km da percorrere</label>                       
                         </div>
-                        <input type="number" placeholder="Inserisci i km" id="km" />
+                        <input type="number" min="1" step="1" placeholder="Inserisci i km" id="km" />
                     </div>
                     
                     <div>
@@ -39,7 +40,6 @@
                     </div>
                 </div>
                 
-        
                 <div class="form-container-btm">
                     <button id="genera">
                         Genera
@@ -58,6 +58,7 @@
                         <h3>NOME PASSEGGERO</h3>
                         <h3 class="nomePasseggero"></h3>
                     </div>
+
                     <div class="ticket-right">
                         <div>
                             <h4>Offerta</h4>
@@ -78,7 +79,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+        </main>
 
         <script type="text/javascript" src="js/main.js"></script>
     </body>

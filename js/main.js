@@ -28,7 +28,7 @@ generaDom.addEventListener('click',
             document.querySelector('.ticketPrice').innerHTML = Math.round((costoTotaleXKm - costoTotaleXKm * 40 / 100) * 100) / 100 + '€';
         }
 
-        document.querySelector('.carrozza').innerHTML = Math.floor(Math.random() * 21) + 1;
+        document.querySelector('.carrozza').innerHTML = Math.floor(Math.random() * 20) + 1;
 
         document.querySelector('.codeCp').innerHTML = Math.floor(Math.random() * 10000) + 90000;
         
@@ -42,7 +42,7 @@ annullaDom.addEventListener('click',
     function(){
         document.getElementById('nome').value = '';
         document.getElementById('km').value = '';
-        document.getElementById('eta').value = '';
+        document.getElementById('eta').value = 1;
 
         document.querySelector('.ticket-container').classList.remove('show');
     }
